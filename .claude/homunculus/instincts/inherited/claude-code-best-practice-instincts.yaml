@@ -1,0 +1,470 @@
+# Instincts generated from https://github.com/skalingclouds/claude-code-best-practice
+# Generated: 2026-03-09T07:55:27.998Z
+# Version: 2.0
+
+---
+id: claude-code-best-practice-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 24 chars
+- Based on 152 commits
+
+---
+id: claude-code-best-practice-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: claude-code-best-practice-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: claude-code-best-practice-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: claude-code-best-practice-workflow-best-practice-workflow-creation
+trigger: "when doing best practice workflow creation"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Best Practice Workflow Creation
+
+## Action
+
+Follow the best-practice-workflow-creation workflow:
+1. Create/update workflow agent in .claude/agents/workflows/best-practice/
+2. Create/update workflow command in .claude/commands/workflows/best-practice/
+3. Update main best practice documentation
+4. Update README.md with new content
+5. Create/update changelog and verification checklist
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: .claude/agents/workflows/best-practice/workflow-*-agent.md, .claude/commands/workflows/best-practice/workflow-*.md, best-practice/*.md
+
+---
+id: claude-code-best-practice-workflow-readme-content-updates
+trigger: "when doing readme content updates"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Readme Content Updates
+
+## Action
+
+Follow the readme-content-updates workflow:
+1. Update README.md with new content
+2. Sometimes update CLAUDE.md in parallel
+3. Occasionally add supporting assets or tags
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~15x per month
+- Files: README.md, CLAUDE.md, !/tags/*.svg
+
+---
+id: claude-code-best-practice-workflow-orchestration-workflow-updates
+trigger: "when doing orchestration workflow updates"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Orchestration Workflow Updates
+
+## Action
+
+Follow the orchestration-workflow-updates workflow:
+1. Update weather agent configuration
+2. Update weather-related skills
+3. Update orchestration workflow documentation
+4. Generate new output files and SVGs
+5. Update settings.json if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .claude/agents/weather*.md, .claude/skills/weather-*/SKILL.md, .claude/settings.json
+
+---
+id: claude-code-best-practice-workflow-implementation-documentation-sync
+trigger: "when doing implementation documentation sync"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Implementation Documentation Sync
+
+## Action
+
+Follow the implementation-documentation-sync workflow:
+1. Update best practice documentation
+2. Update corresponding implementation files
+3. Update README.md with changes
+4. Sometimes update main CLAUDE.md
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: best-practice/claude-*.md, implementation/claude-*-implementation.md, README.md
+
+---
+id: claude-code-best-practice-workflow-changelog-report-workflow
+trigger: "when doing changelog report workflow"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Changelog Report Workflow
+
+## Action
+
+Follow the changelog-report-workflow workflow:
+1. Create workflow changelog agent
+2. Create workflow changelog command
+3. Generate changelog documentation
+4. Create verification checklist
+5. Update main documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .claude/agents/workflows/reports/workflow-changelog-*-agent.md, .claude/commands/workflows/reports/workflow-changelog-report-*.md, changelog/*/changelog.md
+
+---
+id: claude-code-best-practice-camelcase-files
+trigger: "When creating new file names"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Camelcase Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Pattern observed in existing file structure
+- Consistent with Python naming conventions
+
+---
+id: claude-code-best-practice-pascalcase-classes
+trigger: "When defining class names"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Pascalcase Classes
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Standard Python class naming pattern
+- Consistent across codebase structure
+
+---
+id: claude-code-best-practice-screaming-snake-constants
+trigger: "When defining constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- Python PEP 8 standard
+- Observed in configuration patterns
+
+---
+id: claude-code-best-practice-freeform-commits
+trigger: "When making commits"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Freeform Commits
+
+## Action
+
+Use descriptive freeform commit messages without strict prefixes
+
+## Evidence
+
+- Commit examples: 'new updates', 'updated docs', 'reorganized README tips'
+- Average length 24 characters suggests concise but descriptive
+
+---
+id: claude-code-best-practice-workflow-commits
+trigger: "When making workflow-related commits"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Workflow Commits
+
+## Action
+
+Use [workflow] prefix for workflow updates
+
+## Evidence
+
+- Commit example: '[workflow] subagents updated'
+- Pattern suggests workflow-specific tagging
+
+---
+id: claude-code-best-practice-version-commits
+trigger: "When making version-related commits"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Version Commits
+
+## Action
+
+Use [version] format for versioned updates
+
+## Evidence
+
+- Commit examples: '[2.1.71] scheduled tasks /loop', '[changelog] 2.1.71'
+
+---
+id: claude-code-best-practice-new-workflow-creation
+trigger: "When adding or updating a best practice feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice New Workflow Creation
+
+## Action
+
+Create workflow agent, command, documentation, update README, and create changelog with verification checklist
+
+## Evidence
+
+- Pattern observed 4x/month
+- Consistent file structure across .claude/agents/, .claude/commands/, best-practice/, README.md, changelog/
+
+---
+id: claude-code-best-practice-readme-updates
+trigger: "When adding new tips, features, or content to documentation"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Readme Updates
+
+## Action
+
+Update README.md with new content and optionally update CLAUDE.md in parallel
+
+## Evidence
+
+- Highest frequency pattern: 15x/month
+- Consistent updates to README.md and CLAUDE.md files
+
+---
+id: claude-code-best-practice-weather-workflow-updates
+trigger: "When updating the weather orchestration example workflow"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Weather Workflow Updates
+
+## Action
+
+Update weather agent, skills, documentation, generate SVGs, and update settings.json
+
+## Evidence
+
+- Pattern observed 3x/month
+- Files involved: .claude/agents/weather*.md, .claude/skills/weather-*/, orchestration-workflow/
+
+---
+id: claude-code-best-practice-implementation-sync
+trigger: "When best practices are updated and need implementation guidance"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Implementation Sync
+
+## Action
+
+Update both best practice documentation and corresponding implementation files, then sync main documentation
+
+## Evidence
+
+- Pattern observed 3x/month
+- Parallel updates to best-practice/ and implementation/ directories
+
+---
+id: claude-code-best-practice-changelog-reports
+trigger: "When documenting changes to specific features or components"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Changelog Reports
+
+## Action
+
+Create workflow changelog agent and command, generate changelog with verification checklist
+
+## Evidence
+
+- Pattern observed 3x/month
+- Structured approach with agents in .claude/agents/workflows/reports/ and verification checklists
+
+---
+id: claude-code-best-practice-hybrid-organization
+trigger: "When organizing modules and code structure"
+confidence: 0.7
+domain: architecture
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Hybrid Organization
+
+## Action
+
+Use hybrid module organization approach
+
+## Evidence
+
+- Module organization pattern observed
+- Mix of single-package structure with separate test location
+
+---
+id: claude-code-best-practice-separate-tests
+trigger: "When creating test files"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/claude-code-best-practice
+---
+
+# Claude Code Best Practice Separate Tests
+
+## Action
+
+Place tests in separate location from source code
+
+## Evidence
+
+- Test location marked as 'separate' in architecture analysis
+- Follows common Python testing patterns
+
